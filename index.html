@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Product Landing Page Sandi 12 TKJ 3</title>
+    <link rel="stylesheet" href="style" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta charset="UTF-8">
+     <style>
+       * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+#page-wrapper,  {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    top: 30px;
+    
+}
+
+#title {
+  margin-left: -10px;
+}
+.pecel {
+  margin-right: -29px;
+}
+
+h1 {
+  margin-top: 20px;
+  display:flex;
+
+}
+.logo, #header, nav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    left: 0;
+    right: 0;
+    position: fixed;
+    margin-top: 20px;
+    background-color: #eee;
+}
+
+#header-img {
+    max-width: 100%;
+    margin-right: 20px;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-bottom: 20px; 
+}
+
+#header, {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    padding: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    position: absolute;
+    right: 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+li {
+  margin-right: 10px;
+}
+
+
+.btn {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 3px black solid;
+  background: yellow;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  margin-top: 100px;
+}
+
+#hero > h2 {
+  margin-bottom: 20px;
+  word-wrap: break-word;
+}
+
+#hero input[type='email'] {
+  max-width: 275px;
+  width: 100%;
+  padding: 5px;
+}
+
+#hero input[type='submit'] {
+  max-width: 150px;
+  width: 100%;
+  height: 30px;
+  margin: 15px 0;
+  border: 0;
+  background-color: #f1c40f;
+}
+
+#hero input[type='submit']:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}
+
+@media (max-width: 650px) {
+  #hero {
+    margin-top: 120px;
+  }
+}
+
+
+.container {
+  margin: 0 auto; /* untuk membuat kontainer berada di tengah halaman */
+  max-width: 560px; /* atur lebar kontainer agar tidak terlalu lebar */
+  padding: 20px;
+}
+
+.grid {
+  display: flex; /* mengatur elemen-elemen dalam grid secara horizontal */
+  
+  margin-bottom: 10px; /* memberikan ruang antara kotak horizontal */
+  align-items: center;
+}
+
+.icon {
+  margin-right: 10px; /* memberikan ruang antara ikon dan teks */
+  margin-left: 40px;
+  display: flex;
+}
+
+#CPU {
+  margin-left: -7px;
+  margin-right: 1px
+}
+
+#layar {
+  margin-left: 8px;
+  margin-right: 58px
+}
+
+#CAMERA {
+  margin-left: 38px;
+  margin-right: 44px
+}
+
+#BATERAI {
+  margin-left: 25px;
+}
+
+
+.desc {
+  flex-grow: 1; /* agar elemen deskripsi memenuhi sisa ruang yang tersedia */
+  margin-right: 
+}
+
+/* Mengatur tampilan responsive untuk ukuran layar kecil */
+@media (max-width: 480px) {
+  .grid {
+    flex-direction: column; /* mengatur elemen-elemen dalam grid secara vertikal */
+  }
+
+  .icon {
+    margin-right: 0; /* menghapus ruang antara ikon dan teks pada tampilan responsif */
+    margin-bottom: 10px; /* memberikan ruang antara ikon dan teks pada tampilan responsif */
+  }
+}
+
+#Review {
+  margin-left: 122
+}
+
+#Harga {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  height: 250px
+}
+
+.product h2,
+.product ol,
+.product button {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product ol {
+  flex-grow: 1;
+}
+
+.product ol li {
+  display: block;
+  text-align: left;
+}
+
+.level {
+  border: 2px solid black;
+  background-color: gray;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 39px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+footer {
+  margin-top: 30px;
+  background-color: #ddd;
+  padding: 20px;
+}
+
+footer > ol {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+}
+
+footer > ol > li {
+  padding: 0 10px;
+}
+
+footer > span {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  color: #444;
+  right: 0;
+}
+       </style>
+  </head>
+
+  <body>
+    <div id="page-wrapper" class="logo">
+    <header id="header" class="siji">
+      <img id="header-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Xiaomi_logo_%282021-%29.svg/512px-Xiaomi_logo_%282021-%29.svg.png" alt="mi" width="40">
+      <h1 id="title" class="elemen">Web Pre Order</h1>
+      <nav id="nav-bar">
+      <ul class="pecel">
+        <li><a class="nav-link" href="#Spec">Spec</a></li>
+        <li><a class="nav-link" href="#Review">Review</a></li>
+        <li><a class="nav-link" href="#Harga">Harga</a></li>
+      </ul>
+    </nav>
+      </header>
+       </div>
+
+      <div class="container"></div>
+
+  <section id="hero">
+    <h2>Redmi Note 11 </h2>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input
+        name="email"
+        id="email"
+        type="email"
+        placeholder="Masukan Email Anda "
+        required
+      />
+      <input id="submit" type="submit" value="Mulai" class="btn" />
+    </form>
+  </section>
+
+<div class="container">
+  <section id="Spec">
+    <div class="grid">
+      <div class="icon">
+      <img src="https://w7.pngwing.com/pngs/125/1/png-transparent-smartphone-mobile-mobile-frame-phone-android-thumbnail.png" width="80" height="180" alt="layar" id="layar">
+      </div>
+       <div class="desc">
+         <h2>6.43"</h2>
+         <p>120Hz FHD+ Amoled Dot Display</p>
+         </div>
+    </div>
+
+    <div class="grid">
+      <div class="icon" id="CPU">
+      <img src="https://media.istockphoto.com/id/1270363350/vector/cpu-icon.jpg?s=170667a&w=0&k=20&c=lVyFZDrZJfBxwxS-qmUuINuN62CLYPtPM4NWgIMRvIo=" alt="CPU" width="200" height="180">
+      </div>
+      <div class="desc">
+         <h2>Snapdragon 5G Processor</h2>
+         <p>Advanced 6nm process</p>
+         </div>
+         </div>
+
+         <div class="grid">
+           <div class="icon" id="CAMERA">
+           <img src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3431354/lens-icon-md.png" alt="lens" width="112">
+           </div>
+            <div class="desc">
+         <h2>108MP pro-grade main camera</h2>
+         <p>Ultra wide and macro lens</p>
+         </div>
+         </div>
+
+         <div class="grid">
+           <div class="icon">
+           <img src="https://cdn-icons-png.flaticon.com/512/664/664886.png" alt="battery" width="120">
+           </div>
+            <div class="desc" id="BATERAI">
+         <h2>67W turbo charging</h2>
+         <p>5000mAh (typ) battery</p>
+         </div>
+         </div>
+    </section>
+
+    <section id="Review">
+      <iframe src="https://youtu.be/psVtwDY5EEI?si=Zk8ogKaxP5PNny5Z" id="video" height="315" width="320" frameborder="0" >
+      </iframe>
+    </section>
+  </div>
+
+    <section id="Harga">
+      <div class="product" id="tenor">
+        <div class="level">
+          <h3>Varian Pertama</h3>
+        </div>
+        <h2 class="rego">$329</h2>
+        <ol>
+          <li>6GB + 64GB</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+      <div class="product" id="bass">
+        <div class="level">
+          <h3>Varian Kedua</h3>
+          </div>
+        <h2 class="rego">$349</h2>
+        <ol>
+          <li>6GB + 128GB</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+      <div class="product" id="valve">
+        <div class="level">
+          <h3>Varian Ketiga</h3>
+          </div>
+      <h2 class="rego">$379</h2>
+        <ol>
+          <li>8GB + 128GB</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+    </section>
+    <footer>
+      <ol>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Contact</a></li>
+      </ol>
+      <span>Copyright 2023, Sandi Saputra 12 TKJ 3</span>
+    </footer>
+  </div>
+</div>
+    </body>
+    </html>
